@@ -17,4 +17,10 @@ import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue-3/dist/bootstrap-vue-3.css";
 // BOOTSRAP
 
-createApp(App).use(BootstrapVue3).use(router).mount("#app");
+// axios
+
+import axios from "axios";
+import VueAxios from "vue-axios";
+// axios
+
+createApp(App).use(BootstrapVue3).use(VueAxios, axios).use(router).mount("#app");
